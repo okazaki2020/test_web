@@ -14,4 +14,4 @@ jobs:
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: aws s3 sync --delete --region ap-northeast-1 ./files/ s3://s3-site-test-20230426/
+        run: aws s3 sync --delete --region ap-northeast-1 ./speed_test/ s3://s3-site-test-20230426/
